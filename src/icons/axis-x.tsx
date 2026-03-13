@@ -1,0 +1,20 @@
+import { forwardRef } from "react";
+import type { CascadeIconProps } from "../types";
+
+const AxisX = forwardRef<SVGSVGElement, CascadeIconProps>(
+  ({ color = "currentColor", ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 15 15"
+      width="15"
+      height="15"
+      fill="none"
+      {...props}
+    >
+      <path d="M5.22 11.50L4.06 11.50L7.19 7.03L7.19 7.78L4.23 3.50L5.41 3.50L6.57 5.20Q6.83 5.57 6.99 5.83Q7.15 6.09 7.29 6.33Q7.43 6.58 7.60 6.93L7.60 6.93L7.42 6.93Q7.59 6.59 7.73 6.34Q7.87 6.09 8.04 5.83Q8.21 5.57 8.46 5.20L8.46 5.20L9.64 3.50L10.79 3.50L7.85 7.74L7.85 6.99L10.94 11.50L9.77 11.50L8.37 9.47Q8.14 9.14 7.99 8.90Q7.83 8.66 7.70 8.42Q7.56 8.18 7.40 7.85L7.40 7.85L7.62 7.85Q7.45 8.17 7.32 8.40Q7.18 8.64 7.02 8.89Q6.86 9.13 6.63 9.47L6.63 9.47L5.22 11.50Z" fill={color} />
+    </svg>
+  )
+);
+AxisX.displayName = "AxisX";
+export { AxisX };

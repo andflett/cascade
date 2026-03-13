@@ -1,0 +1,22 @@
+import { forwardRef } from "react";
+import type { CascadeIconProps } from "../types";
+
+const AlignSelfCenter = forwardRef<SVGSVGElement, CascadeIconProps>(
+  ({ color = "currentColor", ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 15 15"
+      width="15"
+      height="15"
+      fill="none"
+      {...props}
+    >
+      <path d="M1 0h3v6h-3zM2 1v4h1v-4z" fill={color} fillRule="evenodd" />
+      <path d="M6 4h3v7h-3zM7 5v5h1v-5z" fill={color} fillRule="evenodd" />
+      <path d="M11 0h3v5h-3zM12 1v3h1v-3z" fill={color} fillRule="evenodd" />
+    </svg>
+  )
+);
+AlignSelfCenter.displayName = "AlignSelfCenter";
+export { AlignSelfCenter };

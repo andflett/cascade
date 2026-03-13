@@ -1,0 +1,52 @@
+{
+  "name": "@designtools/cascade",
+  "version": "0.1.0",
+  "description": "88 CSS layout property icons. 15x15 SVG, React components, tree-shakeable.",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "svg"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "tsup": "^8.0.0",
+
+    "typescript": "^5.5.0"
+  },
+  "keywords": [
+    "icons",
+    "css",
+    "layout",
+    "svg",
+    "react",
+    "design-tools",
+    "flexbox",
+    "grid",
+    "devtools"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/designtools/cascade.git"
+  }
+}

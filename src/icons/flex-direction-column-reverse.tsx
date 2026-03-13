@@ -1,0 +1,22 @@
+import { forwardRef } from "react";
+import type { CascadeIconProps } from "../types";
+
+const FlexDirectionColumnReverse = forwardRef<SVGSVGElement, CascadeIconProps>(
+  ({ color = "currentColor", ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 15 15"
+      width="15"
+      height="15"
+      fill="none"
+      {...props}
+    >
+      <path d="M0 0h9v8h-9zM1 1v6h7v-6z" fill={color} fillRule="evenodd" />
+      <path d="M0 9h9v6h-9zM1 10v4h7v-4z" fill={color} fillRule="evenodd" />
+      <path d="M12 4h1v10h-1zM12.5 1l-2.5 3h5z" fill={color} />
+    </svg>
+  )
+);
+FlexDirectionColumnReverse.displayName = "FlexDirectionColumnReverse";
+export { FlexDirectionColumnReverse };
