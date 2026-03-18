@@ -1,0 +1,22 @@
+import { forwardRef } from "react";
+import type { CascadeIconProps } from "../types";
+
+const LetterSpacing = forwardRef<SVGSVGElement, CascadeIconProps>(
+  ({ color = "currentColor", solid, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 15 15"
+      width="15"
+      height="15"
+      fill="none"
+      {...props}
+    >
+      <path d="M5.08 11.48L4 11.48L6.89 3.52L8.07 3.52L11 11.48L9.93 11.48L8.24 6.76Q8.09 6.32 7.88 5.66Q7.67 5.01 7.38 3.99L7.38 3.99L7.57 3.99Q7.28 5.02 7.07 5.68Q6.86 6.35 6.72 6.76L6.72 6.76L5.08 11.48ZM9.55 9.26L5.45 9.26L5.45 8.37L9.55 8.37L9.55 9.26Z" fill={color} />
+      <path d="M1 1h1v13h-1z" fill={color} />
+      <path d="M13 1h1v13h-1z" fill={color} />
+    </svg>
+  )
+);
+LetterSpacing.displayName = "LetterSpacing";
+export { LetterSpacing };

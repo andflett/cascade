@@ -1,7 +1,7 @@
 {
   "name": "@designtools/cascade",
-  "version": "0.1.0",
-  "description": "88 CSS layout property icons. 15x15 SVG, React components, tree-shakeable.",
+  "version": "0.1.2",
+  "description": "CSS layout property icons. 15x15 SVG, React components, tree-shakeable.",
   "type": "module",
   "sideEffects": false,
   "exports": {
@@ -30,7 +30,6 @@
     "@types/react": "^19.0.0",
     "react": "^19.0.0",
     "tsup": "^8.0.0",
-
     "typescript": "^5.5.0"
   },
   "keywords": [

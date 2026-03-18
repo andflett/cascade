@@ -1,0 +1,584 @@
+[
+  {
+    "property": "position",
+    "value": "static",
+    "icon": "PositionStatic",
+    "duotone": false
+  },
+  {
+    "property": "position",
+    "value": "relative",
+    "icon": "PositionRelative",
+    "duotone": false
+  },
+  {
+    "property": "position",
+    "value": "absolute",
+    "icon": "PositionAbsolute",
+    "duotone": false
+  },
+  {
+    "property": "position",
+    "value": "fixed",
+    "icon": "PositionFixed",
+    "duotone": false
+  },
+  {
+    "property": "position",
+    "value": "sticky",
+    "icon": "PositionSticky",
+    "duotone": false
+  },
+  {
+    "property": "display",
+    "value": "block",
+    "icon": "DisplayBlock",
+    "duotone": false
+  },
+  {
+    "property": "display",
+    "value": "inline",
+    "icon": "DisplayInline",
+    "duotone": false
+  },
+  {
+    "property": "display",
+    "value": "inline-block",
+    "icon": "DisplayInlineBlock",
+    "duotone": false
+  },
+  {
+    "property": "display",
+    "value": "flex",
+    "icon": "DisplayFlex",
+    "duotone": false
+  },
+  {
+    "property": "display",
+    "value": "inline-flex",
+    "icon": "DisplayInlineFlex",
+    "duotone": false
+  },
+  {
+    "property": "display",
+    "value": "grid",
+    "icon": "DisplayGrid",
+    "duotone": false
+  },
+  {
+    "property": "display",
+    "value": "inline-grid",
+    "icon": "DisplayInlineGrid",
+    "duotone": false
+  },
+  {
+    "property": "display",
+    "value": "none",
+    "icon": "DisplayNone",
+    "duotone": false
+  },
+  {
+    "property": "flex-direction",
+    "value": "row",
+    "icon": "FlexDirectionRow",
+    "duotone": false
+  },
+  {
+    "property": "flex-direction",
+    "value": "row-reverse",
+    "icon": "FlexDirectionRowReverse",
+    "duotone": false
+  },
+  {
+    "property": "flex-direction",
+    "value": "column",
+    "icon": "FlexDirectionColumn",
+    "duotone": false
+  },
+  {
+    "property": "flex-direction",
+    "value": "column-reverse",
+    "icon": "FlexDirectionColumnReverse",
+    "duotone": false
+  },
+  {
+    "property": "flex-wrap",
+    "value": "nowrap",
+    "icon": "FlexWrapNowrap",
+    "duotone": false
+  },
+  {
+    "property": "flex-wrap",
+    "value": "wrap",
+    "icon": "FlexWrapWrap",
+    "duotone": false
+  },
+  {
+    "property": "flex-wrap",
+    "value": "wrap-reverse",
+    "icon": "FlexWrapWrapReverse",
+    "duotone": false
+  },
+  {
+    "property": "flex-grow",
+    "value": null,
+    "icon": "FlexGrow",
+    "duotone": false
+  },
+  {
+    "property": "flex-shrink",
+    "value": null,
+    "icon": "FlexShrink",
+    "duotone": false
+  },
+  {
+    "property": "justify-content",
+    "value": "flex-start",
+    "icon": "JustifyContentFlexStart",
+    "duotone": true
+  },
+  {
+    "property": "justify-content",
+    "value": "center",
+    "icon": "JustifyContentCenter",
+    "duotone": true
+  },
+  {
+    "property": "justify-content",
+    "value": "flex-end",
+    "icon": "JustifyContentFlexEnd",
+    "duotone": true
+  },
+  {
+    "property": "justify-content",
+    "value": "space-between",
+    "icon": "JustifyContentSpaceBetween",
+    "duotone": true
+  },
+  {
+    "property": "justify-content",
+    "value": "space-around",
+    "icon": "JustifyContentSpaceAround",
+    "duotone": true
+  },
+  {
+    "property": "justify-content",
+    "value": "space-evenly",
+    "icon": "JustifyContentSpaceEvenly",
+    "duotone": true
+  },
+  {
+    "property": "justify-content",
+    "value": "stretch",
+    "icon": "JustifyContentStretch",
+    "duotone": true
+  },
+  {
+    "property": "align-items",
+    "value": "flex-start",
+    "icon": "AlignItemsFlexStart",
+    "duotone": true
+  },
+  {
+    "property": "align-items",
+    "value": "start",
+    "icon": "AlignItemsStart",
+    "duotone": true
+  },
+  {
+    "property": "align-items",
+    "value": "center",
+    "icon": "AlignItemsCenter",
+    "duotone": true
+  },
+  {
+    "property": "align-items",
+    "value": "flex-end",
+    "icon": "AlignItemsFlexEnd",
+    "duotone": true
+  },
+  {
+    "property": "align-items",
+    "value": "end",
+    "icon": "AlignItemsEnd",
+    "duotone": true
+  },
+  {
+    "property": "align-items",
+    "value": "stretch",
+    "icon": "AlignItemsStretch",
+    "duotone": true
+  },
+  {
+    "property": "align-items",
+    "value": "baseline",
+    "icon": "AlignItemsBaseline",
+    "duotone": false
+  },
+  {
+    "property": "align-self",
+    "value": "auto",
+    "icon": "AlignSelfAuto",
+    "duotone": false
+  },
+  {
+    "property": "align-self",
+    "value": "flex-start",
+    "icon": "AlignSelfFlexStart",
+    "duotone": true
+  },
+  {
+    "property": "align-self",
+    "value": "start",
+    "icon": "AlignSelfStart",
+    "duotone": true
+  },
+  {
+    "property": "align-self",
+    "value": "center",
+    "icon": "AlignSelfCenter",
+    "duotone": true
+  },
+  {
+    "property": "align-self",
+    "value": "flex-end",
+    "icon": "AlignSelfFlexEnd",
+    "duotone": true
+  },
+  {
+    "property": "align-self",
+    "value": "end",
+    "icon": "AlignSelfEnd",
+    "duotone": true
+  },
+  {
+    "property": "align-self",
+    "value": "stretch",
+    "icon": "AlignSelfStretch",
+    "duotone": true
+  },
+  {
+    "property": "align-self",
+    "value": "baseline",
+    "icon": "AlignSelfBaseline",
+    "duotone": true
+  },
+  {
+    "property": "align-content",
+    "value": "flex-start",
+    "icon": "AlignContentFlexStart",
+    "duotone": true
+  },
+  {
+    "property": "align-content",
+    "value": "start",
+    "icon": "AlignContentStart",
+    "duotone": true
+  },
+  {
+    "property": "align-content",
+    "value": "center",
+    "icon": "AlignContentCenter",
+    "duotone": true
+  },
+  {
+    "property": "align-content",
+    "value": "flex-end",
+    "icon": "AlignContentFlexEnd",
+    "duotone": true
+  },
+  {
+    "property": "align-content",
+    "value": "end",
+    "icon": "AlignContentEnd",
+    "duotone": true
+  },
+  {
+    "property": "align-content",
+    "value": "space-between",
+    "icon": "AlignContentSpaceBetween",
+    "duotone": true
+  },
+  {
+    "property": "align-content",
+    "value": "space-around",
+    "icon": "AlignContentSpaceAround",
+    "duotone": true
+  },
+  {
+    "property": "align-content",
+    "value": "space-evenly",
+    "icon": "AlignContentSpaceEvenly",
+    "duotone": true
+  },
+  {
+    "property": "align-content",
+    "value": "stretch",
+    "icon": "AlignContentStretch",
+    "duotone": true
+  },
+  {
+    "property": "padding",
+    "value": "all",
+    "icon": "PaddingAll",
+    "duotone": false
+  },
+  {
+    "property": "padding",
+    "value": "top",
+    "icon": "PaddingTop",
+    "duotone": false
+  },
+  {
+    "property": "padding",
+    "value": "right",
+    "icon": "PaddingRight",
+    "duotone": false
+  },
+  {
+    "property": "padding",
+    "value": "bottom",
+    "icon": "PaddingBottom",
+    "duotone": false
+  },
+  {
+    "property": "padding",
+    "value": "left",
+    "icon": "PaddingLeft",
+    "duotone": false
+  },
+  {
+    "property": "margin",
+    "value": "all",
+    "icon": "MarginAll",
+    "duotone": false
+  },
+  {
+    "property": "margin",
+    "value": "top",
+    "icon": "MarginTop",
+    "duotone": false
+  },
+  {
+    "property": "margin",
+    "value": "right",
+    "icon": "MarginRight",
+    "duotone": false
+  },
+  {
+    "property": "margin",
+    "value": "bottom",
+    "icon": "MarginBottom",
+    "duotone": false
+  },
+  {
+    "property": "margin",
+    "value": "left",
+    "icon": "MarginLeft",
+    "duotone": false
+  },
+  {
+    "property": "gap",
+    "value": "column",
+    "icon": "GapColumn",
+    "duotone": false
+  },
+  {
+    "property": "gap",
+    "value": "row",
+    "icon": "GapRow",
+    "duotone": false
+  },
+  {
+    "property": "size",
+    "value": "horizontal",
+    "icon": "SizeHorizontal",
+    "duotone": false
+  },
+  {
+    "property": "size",
+    "value": "vertical",
+    "icon": "SizeVertical",
+    "duotone": false
+  },
+  {
+    "property": "axis",
+    "value": "x",
+    "icon": "AxisX",
+    "duotone": false
+  },
+  {
+    "property": "axis",
+    "value": "y",
+    "icon": "AxisY",
+    "duotone": false
+  },
+  {
+    "property": "border-style",
+    "value": null,
+    "icon": "BorderStyle",
+    "duotone": false
+  },
+  {
+    "property": "border-width",
+    "value": null,
+    "icon": "BorderWidth",
+    "duotone": false
+  },
+  {
+    "property": "border-radius",
+    "value": "all",
+    "icon": "BorderRadiusAll",
+    "duotone": false
+  },
+  {
+    "property": "border-radius",
+    "value": "top-left",
+    "icon": "BorderRadiusTopLeft",
+    "duotone": false
+  },
+  {
+    "property": "border-radius",
+    "value": "top-right",
+    "icon": "BorderRadiusTopRight",
+    "duotone": false
+  },
+  {
+    "property": "border-radius",
+    "value": "bottom-right",
+    "icon": "BorderRadiusBottomRight",
+    "duotone": false
+  },
+  {
+    "property": "border-radius",
+    "value": "bottom-left",
+    "icon": "BorderRadiusBottomLeft",
+    "duotone": false
+  },
+  {
+    "property": "overflow",
+    "value": "visible",
+    "icon": "OverflowVisible",
+    "duotone": false
+  },
+  {
+    "property": "overflow",
+    "value": "hidden",
+    "icon": "OverflowHidden",
+    "duotone": false
+  },
+  {
+    "property": "overflow",
+    "value": "scroll",
+    "icon": "OverflowScroll",
+    "duotone": true
+  },
+  {
+    "property": "overflow",
+    "value": "auto",
+    "icon": "OverflowAuto",
+    "duotone": false
+  },
+  {
+    "property": "text-align",
+    "value": "left",
+    "icon": "TextAlignLeft",
+    "duotone": false
+  },
+  {
+    "property": "text-align",
+    "value": "center",
+    "icon": "TextAlignCenter",
+    "duotone": false
+  },
+  {
+    "property": "text-align",
+    "value": "right",
+    "icon": "TextAlignRight",
+    "duotone": false
+  },
+  {
+    "property": "text-align",
+    "value": "justify",
+    "icon": "TextAlignJustify",
+    "duotone": false
+  },
+  {
+    "property": "text-decoration",
+    "value": "underline",
+    "icon": "TextDecorationUnderline",
+    "duotone": false
+  },
+  {
+    "property": "text-decoration",
+    "value": "line-through",
+    "icon": "TextDecorationLineThrough",
+    "duotone": false
+  },
+  {
+    "property": "text-decoration",
+    "value": "none",
+    "icon": "TextDecorationNone",
+    "duotone": false
+  },
+  {
+    "property": "text-transform",
+    "value": "uppercase",
+    "icon": "TextTransformUppercase",
+    "duotone": false
+  },
+  {
+    "property": "text-transform",
+    "value": "lowercase",
+    "icon": "TextTransformLowercase",
+    "duotone": false
+  },
+  {
+    "property": "text-transform",
+    "value": "capitalize",
+    "icon": "TextTransformCapitalize",
+    "duotone": false
+  },
+  {
+    "property": "font-family",
+    "value": null,
+    "icon": "FontFamily",
+    "duotone": false
+  },
+  {
+    "property": "font-size",
+    "value": null,
+    "icon": "FontSize",
+    "duotone": false
+  },
+  {
+    "property": "font-weight",
+    "value": null,
+    "icon": "FontWeight",
+    "duotone": false
+  },
+  {
+    "property": "line-height",
+    "value": null,
+    "icon": "LineHeight",
+    "duotone": false
+  },
+  {
+    "property": "letter-spacing",
+    "value": null,
+    "icon": "LetterSpacing",
+    "duotone": false
+  },
+  {
+    "property": "opacity",
+    "value": null,
+    "icon": "Opacity",
+    "duotone": false
+  },
+  {
+    "property": "box-shadow",
+    "value": null,
+    "icon": "BoxShadow",
+    "duotone": false
+  }
+]

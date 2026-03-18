@@ -1,0 +1,21 @@
+import { forwardRef } from "react";
+import type { CascadeIconProps } from "../types";
+
+const TextTransformUppercase = forwardRef<SVGSVGElement, CascadeIconProps>(
+  ({ color = "currentColor", solid, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 15 15"
+      width="15"
+      height="15"
+      fill="none"
+      {...props}
+    >
+      <path d="M1.08 11.48L0 11.48L2.89 3.52L4.07 3.52L7.00 11.48L5.93 11.48L4.24 6.76Q4.09 6.32 3.88 5.66Q3.67 5.01 3.38 3.99L3.38 3.99L3.57 3.99Q3.28 5.02 3.07 5.68Q2.86 6.35 2.72 6.76L2.72 6.76L1.08 11.48ZM5.55 9.26L1.45 9.26L1.45 8.37L5.55 8.37L5.55 9.26Z" fill={color} />
+      <path d="M8.58 11.48L7.50 11.48L10.39 3.52L11.57 3.52L14.50 11.48L13.43 11.48L11.74 6.76Q11.59 6.32 11.38 5.66Q11.17 5.01 10.88 3.99L10.88 3.99L11.07 3.99Q10.78 5.02 10.57 5.68Q10.36 6.35 10.22 6.76L10.22 6.76L8.58 11.48ZM13.05 9.26L8.95 9.26L8.95 8.37L13.05 8.37L13.05 9.26Z" fill={color} />
+    </svg>
+  )
+);
+TextTransformUppercase.displayName = "TextTransformUppercase";
+export { TextTransformUppercase };

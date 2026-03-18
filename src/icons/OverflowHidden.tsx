@@ -1,0 +1,22 @@
+import { forwardRef } from "react";
+import type { CascadeIconProps } from "../types";
+
+const OverflowHidden = forwardRef<SVGSVGElement, CascadeIconProps>(
+  ({ color = "currentColor", solid, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 15 15"
+      width="15"
+      height="15"
+      fill="none"
+      {...props}
+    >
+      <path d="M9 1h1v13h-1zM6 1h4v1h-4zM6 13h4v1h-4z" fill={color} />
+      <path d="M1 5h7v1h-7z" fill={color} />
+      <path d="M1 9h5v1h-5z" fill={color} />
+    </svg>
+  )
+);
+OverflowHidden.displayName = "OverflowHidden";
+export { OverflowHidden };

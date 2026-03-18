@@ -1,6 +1,6 @@
 # @designtools/cascade
 
-88 CSS layout property icons as React components and raw SVGs. Every icon fits a 15x15 pixel grid with crisp edges at 1x resolution.
+96 CSS layout property icons as React components and raw SVGs. Every icon fits a 15x15 pixel grid with crisp edges at 1x resolution.
 
 ## Install
 
@@ -66,8 +66,23 @@ Icons ship without `aria-hidden` so consumers can decide per use case.
 Static `.svg` files are included in the `svg/` directory for use outside React:
 
 ```
-node_modules/@designtools/cascade/svg/display-flex.svg
+node_modules/@designtools/cascade/svg/DisplayFlex.svg
 ```
+
+## Metadata
+
+The package exports a `metadata` array mapping CSS properties/values to icon names:
+
+```tsx
+import { metadata } from "@designtools/cascade";
+
+// Each entry: { property: string, value: string | null, icon: string }
+metadata.forEach((entry) => {
+  console.log(`${entry.property}: ${entry.value} → ${entry.icon}`);
+});
+```
+
+Use this to build icon pickers, documentation, or editor integrations programmatically.
 
 ## Categories
 
@@ -79,8 +94,8 @@ node_modules/@designtools/cascade/svg/display-flex.svg
 | Flex grow/shrink | 2 | `FlexGrow`, `FlexShrink` |
 | Justify content | 6 | `JustifyContentCenter`, `JustifyContentSpaceBetween` |
 | Align items | 7 | `AlignItemsCenter`, `AlignItemsStretch` |
-| Align self | 7 | `AlignSelfCenter`, `AlignSelfStretch` |
-| Align content | 6 | `AlignContentCenter`, `AlignContentSpaceBetween` |
+| Align self | 8 | `AlignSelfCenter`, `AlignSelfStretch` |
+| Align content | 9 | `AlignContentCenter`, `AlignContentSpaceBetween` |
 | Position | 5 | `PositionAbsolute`, `PositionSticky` |
 | Padding | 5 | `PaddingAll`, `PaddingTop` |
 | Margin | 5 | `MarginAll`, `MarginTop` |
@@ -88,12 +103,12 @@ node_modules/@designtools/cascade/svg/display-flex.svg
 | Size | 2 | `SizeHorizontal`, `SizeVertical` |
 | Axis | 2 | `AxisX`, `AxisY` |
 | Border radius | 5 | `BorderRadiusAll`, `BorderRadiusTopLeft` |
-| Border style | 1 | `BorderStyle` |
+| Border style/width | 2 | `BorderStyle`, `BorderWidth` |
 | Overflow | 4 | `OverflowVisible`, `OverflowScroll` |
 | Text align | 4 | `TextAlignLeft`, `TextAlignCenter` |
 | Text decoration | 3 | `TextDecorationUnderline`, `TextDecorationNone` |
 | Text transform | 3 | `TextTransformUppercase`, `TextTransformCapitalize` |
-| Typography | 5 | `TypographyFontFamily`, `TypographyLineHeight` |
+| Typography | 5 | `FontFamily`, `FontSize`, `FontWeight`, `LineHeight`, `LetterSpacing` |
 | Opacity | 1 | `Opacity` |
 | Box shadow | 1 | `BoxShadow` |
 

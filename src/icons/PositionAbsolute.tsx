@@ -1,0 +1,24 @@
+import { forwardRef } from "react";
+import type { CascadeIconProps } from "../types";
+
+const PositionAbsolute = forwardRef<SVGSVGElement, CascadeIconProps>(
+  ({ color = "currentColor", solid, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 15 15"
+      width="15"
+      height="15"
+      fill="none"
+      {...props}
+    >
+      <path d="M7 5h1a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-1a2 2 0 0 1 2 -2zM7 6h1a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1z" fill={color} fillRule="evenodd" />
+      <path d="M1 0h3v1h-3v3h-1v-3a1 1 0 0 1 1 -1z" fill={color} />
+      <path d="M11 0h3a1 1 0 0 1 1 1v3h-1v-3h-3z" fill={color} />
+      <path d="M0 11h1v3h3v1h-3a1 1 0 0 1 -1 -1z" fill={color} />
+      <path d="M14 11h1v3a1 1 0 0 1 -1 1h-3v-1h3z" fill={color} />
+    </svg>
+  )
+);
+PositionAbsolute.displayName = "PositionAbsolute";
+export { PositionAbsolute };

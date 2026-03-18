@@ -1,0 +1,20 @@
+import { forwardRef } from "react";
+import type { CascadeIconProps } from "../types";
+
+const SizeVertical = forwardRef<SVGSVGElement, CascadeIconProps>(
+  ({ color = "currentColor", solid, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 15 15"
+      width="15"
+      height="15"
+      fill="none"
+      {...props}
+    >
+      <path d="M5.88 7.95L5.88 7.95L5.88 12L4.80 12L4.80 3L5.88 3L5.88 6.88L5.70 6.88Q6.01 5.95 6.58 5.56Q7.15 5.16 7.91 5.16L7.91 5.16Q8.60 5.16 9.11 5.44Q9.63 5.72 9.92 6.29Q10.20 6.85 10.20 7.71L10.20 7.71L10.20 12L9.11 12L9.11 7.80Q9.11 7.02 8.70 6.58Q8.29 6.14 7.59 6.14L7.59 6.14Q7.10 6.14 6.72 6.35Q6.33 6.56 6.11 6.97Q5.88 7.37 5.88 7.95Z" fill={color} />
+    </svg>
+  )
+);
+SizeVertical.displayName = "SizeVertical";
+export { SizeVertical };
