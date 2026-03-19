@@ -1,6 +1,10 @@
 # @designtools/cascade
 
-96 CSS layout property icons as React components and raw SVGs. Every icon fits a 15x15 pixel grid with crisp edges at 1x resolution.
+Hand-crafted icons for 29 CSS properties and their values. Made for design tools that speak code.
+
+React components and raw SVGs. Every icon fits a 15x15 pixel grid with crisp edges at 1x resolution.
+
+Brought to you by [flett.cc](https://flett.cc)
 
 ## Install
 
@@ -16,29 +20,32 @@ import { DisplayFlex, PaddingTop, FlexDirectionRow } from "@designtools/cascade"
 function App() {
   return (
     <div>
-      <DisplayFlex aria-hidden="true" />
-      <PaddingTop aria-hidden="true" />
-      <FlexDirectionRow aria-hidden="true" />
+      <DisplayFlex />
+      <PaddingTop />
+      <FlexDirectionRow />
     </div>
   );
 }
 ```
 
-Icons inherit the current text colour by default. Override with the `color` prop:
+## Props
+
+Every icon component accepts the following props along with all standard SVG attributes (`SVGAttributes<SVGSVGElement>`):
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `color` | `string` | `currentColor` | Icon colour. Inherits from parent text colour by default. |
+| `solid` | `boolean` | `false` | Render at full opacity (strips duotone fading). No effect on non-duotone icons. |
+| `width` | `number \| string` | `15` | Icon width. Use multiples of 15 for pixel-perfect rendering. |
+| `height` | `number \| string` | `15` | Icon height. Use multiples of 15 for pixel-perfect rendering. |
 
 ```tsx
 <DisplayFlex color="#6366f1" />
-```
-
-## Sizing
-
-Default size is 15x15. For pixel-perfect rendering, use multiples of 15:
-
-```tsx
+<DisplayFlex solid />
 <DisplayFlex width={30} height={30} />
 ```
 
-Any size works via `width`/`height` props or CSS.
+Any standard SVG attribute (e.g. `className`, `style`, `aria-hidden`) can also be passed directly.
 
 ## Accessibility
 
@@ -63,11 +70,7 @@ Icons ship without `aria-hidden` so consumers can decide per use case.
 
 ## Raw SVGs
 
-Static `.svg` files are included in the `svg/` directory for use outside React:
-
-```
-node_modules/@designtools/cascade/svg/DisplayFlex.svg
-```
+Static `.svg` files are included in the [`svg/`](svg/) directory for use outside React.
 
 ## Metadata
 
@@ -112,9 +115,19 @@ Use this to build icon pickers, documentation, or editor integrations programmat
 | Opacity | 1 | `Opacity` |
 | Box shadow | 1 | `BoxShadow` |
 
-## Tree-shaking
+## Compatibility
 
-The package is marked `sideEffects: false` and ships ESM + CJS. Importing a single icon will not bundle the rest.
+The package ships both **ESM** (`.mjs`) and **CJS** (`.cjs`) bundles with full TypeScript declarations. It works out of the box with any modern bundler or runtime:
+
+| Format | Entry point | Used by |
+|--------|-------------|---------|
+| ESM | `dist/index.mjs` | Vite, Next.js, webpack 5+, esbuild |
+| CJS | `dist/index.cjs` | Node.js `require()`, older bundlers |
+| Types | `dist/index.d.ts` | TypeScript |
+
+The `exports` map in `package.json` ensures the correct format is resolved automatically. The package is marked `sideEffects: false`, so importing a single icon will not bundle the rest.
+
+Requires **React 18+** as a peer dependency.
 
 ## Licence
 
