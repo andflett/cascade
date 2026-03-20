@@ -1,6 +1,6 @@
 # @designtools/cascade
 
-97 icons for CSS properties and their values, available as React components and raw SVGs. Every icon fits a 15x15 pixel grid with crisp edges at 1x resolution.
+97 icons for CSS properties and their values, available as React components and raw SVGs. Every icon fits a 15x15 pixel grid with crisp edges at 1x resolution. [View full library](https://designsurface.dev/cascade).
 
 Made for design tools that speak code. Maintained by [flett.cc](https://flett.cc).
 
