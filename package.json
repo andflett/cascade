@@ -2,6 +2,7 @@
   "name": "@designtools/cascade",
   "version": "0.1.4",
   "description": "CSS layout property icons. 15x15 SVG, React components, tree-shakeable.",
+  "homepage": "https://designsurface.dev/cascade",
   "type": "module",
   "sideEffects": false,
   "exports": {
