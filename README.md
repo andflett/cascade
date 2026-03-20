@@ -4,6 +4,8 @@
 
 Made for design tools that speak code. Maintained by [flett.cc](https://flett.cc).
 
+<img width="1268" height="562" alt="screenshot" src="https://github.com/user-attachments/assets/e0e1cb0c-6370-4f98-9ba4-24c072a74cb2" />
+
 ## Install
 
 ```sh
